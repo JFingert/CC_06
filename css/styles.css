@@ -1,0 +1,41 @@
+html, div {
+background: #39383B;
+}
+
+
+#top {
+	height: 50px;
+	width: 100%;
+}
+
+#logo {
+	background: #FF4D24;
+	height: 110px;
+	width: 100%;
+	/*font-family: 'Dancing Script', cursive;*/
+	font-size: 70px;
+	text-align: right;
+}
+
+#Static, #Modx, #Wordpress, #Contact {
+	background: #39383B;
+	border: solid 1px white;
+}
+
+#accordion {
+	background-color: white;
+	border: solid 1px;
+}
+
+.container {
+	max-width: 1000px;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
