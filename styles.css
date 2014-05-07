@@ -267,8 +267,10 @@ a:visited{
 	}
 }
 
+
+
 /*Mobile*/
-@media (max-width: 650px) {
+@media (min-device-width : 320px), (max-device-width : 480px) {
 	#logoName {
 		font-size: 55px;
 	}
