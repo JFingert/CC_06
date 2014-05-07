@@ -1,7 +1,7 @@
 <html>
 <head>
 
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	
 	<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
 	<!-- // <script src="bootstrap/js/bootstrap.js"></script>  -->
@@ -21,7 +21,8 @@
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 	<script src="smooth-scroll.js"></script>
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Joshua Fingert's Portfolio</title>
 </head>
 
 <body  data-spy="scroll" data-target=".navbar-example">
@@ -31,305 +32,338 @@
 
 	<nav class="navbar  navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
-			<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-		<!-- 	<ul class="nav navbar-nav">
-		<li class="dropdown"> -->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#customMenu">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-
-			<a class="dropdown-toggle" data-toggle="dropdown"><span id="customMenu" class="glyphicon glyphicon-align-justify"></span></a>
-			<ul class="dropdown-menu" role="menu">
-				<li><a data-scroll class="active" href="#top">Portfolio</a></li>
-				<li><a data-scroll href="#Static">Static</a></li>
-				<li><a data-scroll href="#Modx">Modx</a></li>
-				<li><a data-scroll href="#Wordpress">Wordpress</a></li>
-				<li><a data-scroll href="#Contact">Contact</a></li>
+			
+			<ul class="nav navbar-nav">
+				<a class="dropdown-toggle" data-toggle="dropdown"><span id="customMenu" class="glyphicon glyphicon-align-justify"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a data-scroll class="active" href="#top">Portfolio</a></li>
+					<li><a data-scroll href="#Static">Static</a></li>
+					<li><a data-scroll href="#Modx">Modx</a></li>
+					<li><a data-scroll href="#Wordpress">Wordpress</a></li>
+					<li><a data-scroll href="#Contact">Contact</a></li>
+				</ul>
 			</ul>
-			<!-- 	</li>
-		</ul> -->
-		<!-- </div>/.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-</nav>  
+			
+		</div><!-- /.container-fluid -->
+	</nav>  
 
-<!-- End navbar -->
+	<!-- End navbar -->
 
 
 
-<div id="top"></div>
+	<div id="top"></div>
 
-<div id="logo">
-	<!-- <img src="images/beach.jpg"> -->
-</div>
-<div id="logoName">Getting Meta</div>
+	<div id="logo">
+		<!-- <img src="images/beach.jpg"> -->
+	</div>
+	<div id="logoName">Mucho Meta</div>
 
-<!-- <img id="beach" src="images/beach.jpg"> -->
+	<!-- <img id="beach" src="images/beach.jpg"> -->
 
-
-<div id="projects">
-
-	<div id="Static">
-		<h1>Static Site</h1>
-
-		<div class="row">
-			<div>
-
-
-				<!-- PANELS -->
-				<div class="pillButton">
-					<a class="disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#staticShot">
-						Screen Shot
-					</a>
-
-					<a data-toggle="collapse" data-parent="#accordion" data-target="#staticText">
-						Info
-					</a>
-				</div>
-
-				<div>
-					<div id="staticShot" class="col-md-4 divLeft accordion-body fade collapse in">
-						<div class="disappearForMobile">
-							<a data-toggle="modal" data-target=".static"><img class="img-responsive" src="images/CC_02.png"></a>
-
-							<div class="modal fade static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<img  src="images/CC_02.png">
-									</div>
-								</div>
-							</div>
-							<p>Click for larger view.</p>
-						</div>
-
-						<div class="appearForMobile">
-							<img class="img-responsive" src="images/CC_02.png">
-						</div>
-					</div>
-
-
-					<div id="staticText" class="col-md-6 cl-md-offset-2 DivRight accordion-body fade collapse">
-						<div>
-							<p>The team: Arcy, Ceenan, and I.</p>
-							During this project we were really getting to understand proper layout of a webpage. Floating the header and footer was definately tricky, that's what I remember the most about that week. It was my first time standing back and thinking about the order of the page. In the past with Javascript, I had been focusing on the data to get to the browser, with minimal presentation. 
-						</div>
-					</div>
-				</div>
-			</div>
+	<div id="slogan" class="row">
+		<div class="col-md-4 col-md-offset-4">
+			Joshua Fingert's <hr>
+			<h4>Portfolio</h4>
 		</div>
-	</div>      <!-- end of static site -->
-
-	<hr>
-
-	<!-- <div class="dividerOne"></div> -->
+	</div>
 
 
-
-	<div id="Modx">
-		<h1>Modx</h1>
-
-		<div class="row">
-			<div>
+	<div id="projects">
 
 
-				<!-- PANELS -->
-				<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#modxShot">
+
+		<div id="Static" class="row">
+			<h1>Static Site</h1>
+
+			<div class="pillButton">
+				<a class="disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#staticShot">
 					Screen Shot
 				</a>
 
-				<a class="pillButton" data-toggle="collapse" data-parent="#accordion" data-target="#modxText">
+				<a data-toggle="collapse" data-parent="#accordion" data-target="#staticText">
 					Info
 				</a>
+			</div>
 
-				<div>
-					<div id="modxShot" class="col-md-4 divLeft accordion-body fade collapse in">
-						<div class="disappearForMobile">
-							<a data-toggle="modal" data-target=".modx"><img class="img-responsive" src="images/CC_04.png"></a>
+			<div>  <!-- col-md-offset-1 col-xs-6 col-xs-offset-3 -->
+				<div id="staticShot" class="col-sm-4 col-xs-8 col-xs-offset-2 divLeft accordion-body fade collapse in">
+					<div class="disappearForMobile">
+						<a data-toggle="modal" data-target=".static"><img class="img-responsive projectImg" src="images/CC_02.png"></a>
 
-							<div class="modal fade modx" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<img  src="images/CC_04.png">
-									</div>
+						<div class="modal fade static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<img  src="images/CC_02.png">
 								</div>
 							</div>
-							<p>Click for larger view.</p>
 						</div>
-
-						<div class="appearForMobile">
-							<img class="img-responsive" src="images/CC_04.png">
-						</div>
+						<p>Click for larger view.</p>
 					</div>
 
+					<div class="appearForMobile">
+						<img class="img-responsive" src="images/CC_02.png">
+					</div>
+				</div>
 
-					<div id="modxText" class="col-md-6 cl-md-offset-2 divRight accordion-body fade collapse">
-						<div>
-							<p>The team: Grant and I.</p>
-							Getting into Modx for its dynamic qualities, we utilized the GetResources and Wayfinder snippets ... We waded through database territory, eventually creating two iterations of an article site complete with templates, tpl's, and chunks.
+				<!-- col-md-offset-2 -->
+				<div id="staticText" class="col-md-6  divRight accordion-body fade collapse">
+					<div class="spiel">
+						<p>The team: Arcy, Ceenan, and I.</p>
+						During this project we were really getting to understand proper layout of a webpage. Floating the header and footer was definately tricky, that's what I remember the most about that week. It was my first time standing back and thinking about the order of the page. In the past with Javascript, I had been focusing on the data to get to the browser, with minimal presentation. 
+					</div>
+				</div>
+			</div>
+		</div>      <!-- end of static site -->
+
+		<hr>
+
+		<!-- <div class="dividerOne"></div> -->
+
+
+
+		<div id="Modx">
+			<h1>Modx</h1>
+
+			<div class="row">
+				<div>
+
+
+					<!-- PANELS -->
+					<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#modxShot">
+						Screen Shot
+					</a>
+
+					<a class="pillButton" data-toggle="collapse" data-parent="#accordion" data-target="#modxText">
+						Info
+					</a><br>
+
+					<div>   <!-- col-sm-offset-1 -->
+						<div id="modxShot" class="col-sm-4  col-xs-8 col-xs-offset-2 divLeft accordion-body fade collapse in">
+							<div class="disappearForMobile">
+								<a data-toggle="modal" data-target=".modx"><img class="img-responsive projectImg" src="images/CC_04.png"></a>
+
+								<div class="modal fade modx" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<img  src="images/CC_04.png">
+										</div>
+									</div>
+								</div>
+								<p>Click for larger view.</p>
+							</div>
+
+							<div class="appearForMobile">
+								<img class="img-responsive" src="images/CC_04.png">
+							</div>
+						</div>
+
+						<!-- col-md-offset-2 -->
+						<div id="modxText" class="col-md-6  divRight accordion-body fade collapse">
+							<div>
+								<p>The team: Grant and I.</p>
+								Getting into Modx for its dynamic qualities, we utilized the GetResources and Wayfinder snippets ... We waded through database territory, eventually creating two iterations of an article site complete with templates, tpl's, and chunks.
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>      <!-- end of modx site -->
+		</div>      <!-- end of modx site -->
 
-	<hr>
+		<hr>
 
-	<!-- <div class="dividerTwo"></div> -->
+		<!-- <div class="dividerTwo"></div> -->
 
-	<div id="Wordpress">
-		<h1>Wordpress</h1>
+		<div id="Wordpress">
+			<h1>Wordpress</h1>
 
-		<div class="row">
-			<div>
-
-
-				<!-- PANELS -->
-				<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotOne">
-					Screen Shot 1
-				</a>
-
-				<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotTwo">
-					Screen Shot 2
-				</a>
-
-				<a class="pillButton" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressText">
-					Info
-				</a>
-
+			<div class="row">
 				<div>
-					<div id="wordpressShot" class="col-md-4 accordion-body fade collapse in">
-						<div class="disappearForMobile">
-							<a data-toggle="modal" data-target=".wordOne"><img class="img-responsive" src="images/CC_05_01.png"></a>
 
-							<div class="modal fade wordOne" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<img  src="images/CC_05_01.png">
+
+					<!-- PANELS -->
+					<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotOne">
+						Screen Shot 1
+					</a>
+
+					<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotTwo">
+						Screen Shot 2
+					</a>
+
+					<a class="pillButton" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressText">
+						Info
+					</a><br>
+
+					<div>
+						<div id="wordpressShot" class="col-md-3 col-md-offset-1 col-xs-6 accordion-body fade collapse in">
+							<div class="disappearForMobile">
+								<a data-toggle="modal" data-target=".wordOne"><img class="img-responsive projectImg" src="images/CC_05_01.png"></a>
+
+								<div class="modal fade wordOne" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<img  src="images/CC_05_01.png">
+										</div>
 									</div>
 								</div>
+								<p>Click for larger view.</p>
 							</div>
-							<p>Click for larger view.</p>
+
+							<div class="appearForMobile">
+								<img class="img-responsive" src="images/CC_05_01.png">
+							</div>
 						</div>
 
-						<div class="appearForMobile">
-							<img class="img-responsive" src="images/CC_05_01.png">
-						</div>
-					</div>
+						<div id="wordpressShotTwo" class="col-md-3 col-md-offset-1 col-xs-6  accordion-body fade collapse in">
+							<div class="disappearForMobile">
+								<a data-toggle="modal" data-target=".wordTwo"><img class="img-responsive projectImg" src="images/CC_05_02.png"></a>
 
-					<div id="wordpressShotTwo" class="col-md-4 divRight accordion-body fade collapse in">
-						<div class="disappearForMobile">
-							<a data-toggle="modal" data-target=".wordTwo"><img class="img-responsive" src="images/CC_05_02.png"></a>
-
-							<div class="modal fade wordTwo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<img  src="images/CC_05_02.png">
+								<div class="modal fade wordTwo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<img  src="images/CC_05_02.png">
+										</div>
 									</div>
 								</div>
+								<p>Click for larger view.</p>
 							</div>
-							<p>Click for larger view.</p>
+
+							<div class="appearForMobile">
+								<img class="img-responsive" src="images/CC_05_02.png">
+							</div>
 						</div>
 
-						<div class="appearForMobile">
-							<img class="img-responsive" src="images/CC_05_02.png">
-						</div>
-					</div>
 
-
-					<div id="wordpressText" class="col-md-4 accordion-body fade collapse">
-						<div>
-							<p>Colette and I.</p>
-							Colette and I made our first Wordpress site utilizing jQuery, sidebar widgets, and child themes. In view 1 note Twitter feed. In view 2 note sidebar dropdown, made with jQuery.
+						<div id="wordpressText" class="col-md-4 divRight accordion-body fade collapse">
+							<div>
+								<p>Colette and I.</p>
+								Colette and I made our first Wordpress site utilizing jQuery, sidebar widgets, and child themes. In view 1 note Twitter feed. In view 2 note sidebar dropdown, made with jQuery.
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>      <!-- end of wordpress  -->
+		</div>      <!-- end of wordpress  -->
 
-	<hr>
+		<hr>
 
-	<div id="About" class="row">
-		<div class="col-md-4">
-			<img class="meImg" src="images/me.jpg">
-		</div>
-
-		<div class="col-md-4">
-			<span id="aboutName">About Me.</span><span id="aboutText"> I am a Javascript / front end developer in Portland, Or. Originally from California, I came up to Olympia for an audio engineering degree from Evergreen. Interests include technology, food, music, outdoor experiences, and wheeled sports. Horsethief Butte, two hours east of Portland and right over the border into Washington, is a favorite day trip for my family and I. We go there to dry-out from the soggy grind of the city.</span>
-		</div>
-
-		<div class="col-md-4">
-			<img class="horseThiefImg" src="images/HorsethiefButte.jpg">
-		</div>
-
-	</div>
-
-	<hr>
-
-
-	<div id="Contact" class="row">
-		<div class="col-md-6">
-			<span class="glyphicon glyphicon-hand-right" id="contactPointer"></span> <br>
-			Contact
-		</div>
-
-		<div class="col-md-6" id="mailChimp">
-			<!-- Begin MailChimp Signup Form -->
-			<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-			<style type="text/css">
-			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-			#mc_embed_signup {
-				color: black;
-			}
-			/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-			We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-			</style>
-			<div id="mc_embed_signup">
-				<form action="http://linkedin.us8.list-manage1.com/subscribe/post?u=704836c4080d00629a2ca0d87&amp;id=d7f7295fcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<h2>Drop me a line.</h2>
-					<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-						</label>
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-					</div>
-					<div class="mc-field-group">
-						<label for="mce-FNAME">First Name </label>
-						<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-					</div>
-					<div class="mc-field-group">
-						<label for="mce-LNAME">Last Name </label>
-						<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-					</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;"><input type="text" name="b_704836c4080d00629a2ca0d87_d7f7295fcf" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				</form>
+		<div id="About" class="row">
+			<div class="col-sm-3 col-sm-offset-1 col-xs-4">
+				<img class="meImg " src="images/me.jpg">
 			</div>
 
-			<!--End mc_embed_signup-->
-		</div>	
+			<div class="col-sm-4 col-xs-8">
+				<span id="aboutName">About Me.</span><span id="aboutText"> I am a Javascript / front end developer in Portland, Or. Originally from California, I came up to Olympia for an audio engineering degree from Evergreen. Interests include technology, food, music, outdoor experiences, and wheeled sports. Horsethief Butte, two hours east of Portland and right over the border into Washington, is a favorite day trip for my family and I. We go there to dry-out from the soggy grind of the city.</span>
+			</div>
+
+			<div class="col-sm-3 col-xs-6">
+				<img class="horseThiefImg disappearForMobile" src="images/HorsethiefButte.jpg">
+			</div>
+
+		</div>
+
+		<hr>
+
+
+		<div id="Contact" class="row">
+			<div class="col-sm-3 col-sm-offset-2 disappearForMobile">
+				<span class="glyphicon glyphicon-hand-right" id="contactPointer"></span> <br>
+			</div>
+			<div id="contactModalLaunch" class="col-sm-3 col-sm-offset-2">
+				<a style="color: white;" data-toggle="modal" data-target=".mailChimp">
+					Contact</a>
+				</div>
+
+
+				<!-- <button class="btn btn-primary" data-toggle="modal" data-target=".mailChimp">Large modal</button> -->
+
+				<div class="modal fade mailChimp" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div id="mailChimp">
+								<!-- Begin MailChimp Signup Form -->
+								<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+								<style type="text/css">
+								#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+								#mc_embed_signup {
+									color: black;
+								}
+										/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+										We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+										</style>
+										<div id="mc_embed_signup">
+											<form action="http://linkedin.us8.list-manage1.com/subscribe/post?u=704836c4080d00629a2ca0d87&amp;id=d7f7295fcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+												<h2>Drop me a line.</h2>
+												<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+												<div class="mc-field-group">
+													<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+													</label>
+													<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+												</div>
+												<div class="mc-field-group">
+													<label for="mce-FNAME">First Name </label>
+													<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+												</div>
+												<div class="mc-field-group">
+													<label for="mce-LNAME">Last Name </label>
+													<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+												</div>
+												<div id="mce-responses" class="clear">
+													<div class="response" id="mce-error-response" style="display:none"></div>
+													<div class="response" id="mce-success-response" style="display:none"></div>
+												</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+												<div style="position: absolute; left: -5000px;"><input type="text" name="b_704836c4080d00629a2ca0d87_d7f7295fcf" tabindex="-1" value=""></div>
+												<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+											</form>
+										</div>
+									</div><!--End mc_embed_signup-->
+									
+								</div> <!-- modal content -->
+							</div>
+
+						</div> <!-- contact -->
+
+
+
+
+<!-- 
+			////////////
+
+			<div id="mailChimp" class="col-md-3 col-md-offset-1 col-xs-6 divRight accordion-body fade collapse in">
+				<div>
+					<a data-toggle="modal" data-target=".email"></a> 
+
+					<div class="modal fade email" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content"> -->
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3"> -->
+
 	</div> <!-- contact -->
 </div>  <!-- end of Projects -->
 
 
 
-	<script>
-	smoothScroll.init();
+<script>
+smoothScroll.init();
 
-	$('#myScrollspy').on('activate.bs.scrollspy', function () {
-		$('this').addClass('active');
-	})
+$('#myScrollspy').on('activate.bs.scrollspy', function () {
+	$('this').addClass('active');
+})
 
 
-	</script>
+</script>
 
 
 </body>
