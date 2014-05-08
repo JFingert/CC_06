@@ -1,10 +1,14 @@
+<!Doctype html>
 <html>
 <head>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
 	<!-- // <script src="bootstrap/js/bootstrap.js"></script>  -->
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
@@ -25,27 +29,45 @@
 	<title>Joshua Fingert's Portfolio</title>
 </head>
 
-<body  data-spy="scroll" data-target=".navbar-example">
+<body  data-spy="scroll" data-target="#customMenu">
 
 	
 	<!-- Navbar -->
 
-	<nav class="navbar  navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
-			
-			<ul class="nav navbar-nav">
-				<a class="dropdown-toggle" data-toggle="dropdown"><span id="customMenu" class="glyphicon glyphicon-align-justify"></span></a>
-				<ul class="dropdown-menu" role="menu">
-					<li><a data-scroll class="active" href="#top">Portfolio</a></li>
-					<li><a data-scroll href="#Static">Static</a></li>
-					<li><a data-scroll href="#Modx">Modx</a></li>
-					<li><a data-scroll href="#Wordpress">Wordpress</a></li>
-					<li><a data-scroll href="#Contact">Contact</a></li>
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a data-scroll href="#top">Top</a></li>
+					
+					<li class="dropdown">
+						<a data-scroll class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a data-scroll href="#Static">Static</a></li>
+							<li><a data-scroll href="#Modx">Modx</a></li>
+							<li><a data-scroll href="#Wordpress">Wordpress</a></li>
+						</ul>
+						<li><a data-scroll href="#Contact">Contact</a></li>
+					</li>
 				</ul>
-			</ul>
-			
+				
+				
+			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
-	</nav>  
+	</nav>
 
 	<!-- End navbar -->
 
@@ -55,6 +77,7 @@
 
 	<div id="logo">
 		<!-- <img src="images/beach.jpg"> -->
+
 	</div>
 	<div id="logoName">Mucho Meta</div>
 
@@ -72,47 +95,50 @@
 
 
 
-		<div id="Static" class="row">
+		<div id="Static">
 			<h1>Static Site</h1>
+			<div class="row">
 
-			<div class="pillButton">
-				<a class="disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#staticShot">
-					Screen Shot
-				</a>
 
-				<a data-toggle="collapse" data-parent="#accordion" data-target="#staticText">
-					Info
-				</a>
-			</div>
+				<div class="pillButton">
+					<a class="disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#staticShot">
+						Screen Shot
+					</a>
 
-			<div>  <!-- col-md-offset-1 col-xs-6 col-xs-offset-3 -->
-				<div id="staticShot" class="col-sm-4 col-xs-8 col-xs-offset-2 divLeft accordion-body fade collapse in">
-					<div class="disappearForMobile">
-						<a data-toggle="modal" data-target=".static"><img class="img-responsive projectImg" src="images/CC_02.png"></a>
+					<a data-toggle="collapse" data-parent="#accordion" data-target="#staticText">
+						Info
+					</a>
+				</div>
 
-						<div class="modal fade static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg">
-								<div class="modal-content">
-									<img  src="images/CC_02.png">
+				<div>  <!-- col-md-offset-1 col-xs-6 col-xs-offset-3 -->
+					<div id="staticShot" class="col-md-3 col-md-offset-1 col-xs-8 accordion-body fade collapse in">
+						<div class="disappearForMobile">
+							<a data-toggle="modal" data-target=".static"><img class="img-responsive projectImg" src="images/CC_02.png"></a>
+
+							<div class="modal fade static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<img  src="images/CC_02.png">
+									</div>
 								</div>
 							</div>
+							<p>Click for larger view.</p>
 						</div>
-						<p>Click for larger view.</p>
+
+						<div class="appearForMobile">
+							<img class="img-responsive projectImg" src="images/CC_02.png">
+						</div>
 					</div>
 
-					<div class="appearForMobile">
-						<img class="img-responsive" src="images/CC_02.png">
+					<!-- col-md-offset-2 -->
+					<div id="staticText" class="col-xs-12 col-sm-8 col-md-6  divRight accordion-body fade collapse in">
+						<div>
+							<p>The team: Arcy, Ceenan, and I.</p>
+							During this project we were really getting to understand proper layout of a webpage. Floating the header and footer was definately tricky, that's what I remember the most about that week. It was my first time standing back and thinking about the order of the page. In the past with Javascript, I had been focusing on the data to get to the browser, with minimal presentation. 
+						</div>
 					</div>
 				</div>
-
-				<!-- col-md-offset-2 -->
-				<div id="staticText" class="col-md-6  divRight accordion-body fade collapse">
-					<div class="spiel">
-						<p>The team: Arcy, Ceenan, and I.</p>
-						During this project we were really getting to understand proper layout of a webpage. Floating the header and footer was definately tricky, that's what I remember the most about that week. It was my first time standing back and thinking about the order of the page. In the past with Javascript, I had been focusing on the data to get to the browser, with minimal presentation. 
-					</div>
-				</div>
-			</div>
+			</div>  <!-- .row -->
 		</div>      <!-- end of static site -->
 
 		<hr>
@@ -138,7 +164,7 @@
 					</a><br>
 
 					<div>   <!-- col-sm-offset-1 -->
-						<div id="modxShot" class="col-sm-4  col-xs-8 col-xs-offset-2 divLeft accordion-body fade collapse in">
+						<div id="modxShot" class="col-md-3 col-md-offset-1 col-xs-8 accordion-body fade collapse in">
 							<div class="disappearForMobile">
 								<a data-toggle="modal" data-target=".modx"><img class="img-responsive projectImg" src="images/CC_04.png"></a>
 
@@ -153,13 +179,14 @@
 							</div>
 
 							<div class="appearForMobile">
-								<img class="img-responsive" src="images/CC_04.png">
+								<img class="img-responsive projectImg" src="images/CC_04.png">
 							</div>
 						</div>
 
 						<!-- col-md-offset-2 -->
-						<div id="modxText" class="col-md-6  divRight accordion-body fade collapse">
+						<div id="modxText" class="col-xs-12 col-sm-8 col-md-6  divRight accordion-body fade collapse in">
 							<div>
+
 								<p>The team: Grant and I.</p>
 								Getting into Modx for its dynamic qualities, we utilized the GetResources and Wayfinder snippets ... We waded through database territory, eventually creating two iterations of an article site complete with templates, tpl's, and chunks.
 							</div>
@@ -176,72 +203,76 @@
 		<div id="Wordpress">
 			<h1>Wordpress</h1>
 
+			
+
+
+			<!-- PANELS -->
+			<!-- <div class="col-md-10 divLeft"> -->
+			<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotOne">
+				Screen Shot 1
+			</a>
+
+			<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotTwo">
+				Screen Shot 2
+			</a>
+
+			<a class="pillButton" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressText">
+				Info
+			</a>
+			<!-- </div> -->
 			<div class="row">
+				
+
 				<div>
+					<div id="wordpressShotOne" class="col-md-3 col-md-offset-1 col-xs-6 accordion-body fade collapse in">
+						<div class="disappearForMobile">
+							<a data-toggle="modal" data-target=".wordOne"><img class="img-responsive projectImg" src="images/CC_05_01.png"></a>
 
-
-					<!-- PANELS -->
-					<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotOne">
-						Screen Shot 1
-					</a>
-
-					<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotTwo">
-						Screen Shot 2
-					</a>
-
-					<a class="pillButton" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressText">
-						Info
-					</a><br>
-
-					<div>
-						<div id="wordpressShot" class="col-md-3 col-md-offset-1 col-xs-6 accordion-body fade collapse in">
-							<div class="disappearForMobile">
-								<a data-toggle="modal" data-target=".wordOne"><img class="img-responsive projectImg" src="images/CC_05_01.png"></a>
-
-								<div class="modal fade wordOne" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<img  src="images/CC_05_01.png">
-										</div>
+							<div class="modal fade wordOne" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<img  src="images/CC_05_01.png">
 									</div>
 								</div>
-								<p>Click for larger view.</p>
 							</div>
-
-							<div class="appearForMobile">
-								<img class="img-responsive" src="images/CC_05_01.png">
-							</div>
+							<p>Click for larger view.</p>
 						</div>
 
-						<div id="wordpressShotTwo" class="col-md-3 col-md-offset-1 col-xs-6  accordion-body fade collapse in">
-							<div class="disappearForMobile">
-								<a data-toggle="modal" data-target=".wordTwo"><img class="img-responsive projectImg" src="images/CC_05_02.png"></a>
+						<div class="appearForMobile">
+							<img class="img-responsive projectImg" src="images/CC_05_01.png">
+						</div>
 
-								<div class="modal fade wordTwo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<img  src="images/CC_05_02.png">
-										</div>
+					</div>
+
+					<div id="wordpressShotTwo" class="col-md-3 col-md-offset-1 col-xs-6  accordion-body fade collapse in">
+						<div class="disappearForMobile">
+							<a data-toggle="modal" data-target=".wordTwo"><img class="img-responsive projectImg" src="images/CC_05_02.png"></a>
+
+							<div class="modal fade wordTwo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<img  src="images/CC_05_02.png">
 									</div>
 								</div>
-								<p>Click for larger view.</p>
 							</div>
-
-							<div class="appearForMobile">
-								<img class="img-responsive" src="images/CC_05_02.png">
-							</div>
+							<p>Click for larger view.</p>
 						</div>
 
+						<div class="appearForMobile">
+							<img class="img-responsive projectImg" src="images/CC_05_02.png">
+						</div>
+					</div>
 
-						<div id="wordpressText" class="col-md-4 divRight accordion-body fade collapse">
-							<div>
-								<p>Colette and I.</p>
-								Colette and I made our first Wordpress site utilizing jQuery, sidebar widgets, and child themes. In view 1 note Twitter feed. In view 2 note sidebar dropdown, made with jQuery.
-							</div>
+
+					<div id="wordpressText" class="col-md-4 col-xs-12 divRight accordion-body fade collapse in">
+						<div>
+							<p>Colette and I.</p>
+							Colette and I made our first Wordpress site utilizing jQuery, sidebar widgets, and child themes. In view 1 note Twitter feed. In view 2 note sidebar dropdown, made with jQuery.
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>      <!-- end of wordpress  -->
 
 		<hr>
@@ -251,7 +282,7 @@
 				<img class="meImg " src="images/me.jpg">
 			</div>
 
-			<div class="col-sm-4 col-xs-8">
+			<div class="col-sm-4 col-xs-12">
 				<span id="aboutName">About Me.</span><span id="aboutText"> I am a Javascript / front end developer in Portland, Or. Originally from California, I came up to Olympia for an audio engineering degree from Evergreen. Interests include technology, food, music, outdoor experiences, and wheeled sports. Horsethief Butte, two hours east of Portland and right over the border into Washington, is a favorite day trip for my family and I. We go there to dry-out from the soggy grind of the city.</span>
 			</div>
 
@@ -265,28 +296,30 @@
 
 
 		<div id="Contact" class="row">
-			<div class="col-sm-3 col-sm-offset-2 disappearForMobile">
+			<div class="col-sm-3 col-sm-offset-2 col-xs-6">
 				<span class="glyphicon glyphicon-hand-right" id="contactPointer"></span> <br>
 			</div>
-			<div id="contactModalLaunch" class="col-sm-3 col-sm-offset-2">
-				<a style="color: white;" data-toggle="modal" data-target=".mailChimp">
-					Contact</a>
-				</div>
+			<div id="contactModalLaunch" class="col-sm-3 col-sm-offset-2 col-xs-6 ">
+				<a data-toggle="modal" data-target=".mcModal"><button id="contactButton">Contact</button></a>
+			</div>
 
 
-				<!-- <button class="btn btn-primary" data-toggle="modal" data-target=".mailChimp">Large modal</button> -->
+			<!-- <button class="btn btn-primary" data-toggle="modal" data-target=".mailChimp">Large modal</button> -->
+	    			<!-- <a data-toggle="modal" data-target="#mailChimpModal">
+	    			Contact</a> -->
+	    			
 
-				<div class="modal fade mailChimp" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div id="mailChimp">
-								<!-- Begin MailChimp Signup Form -->
-								<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-								<style type="text/css">
-								#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-								#mc_embed_signup {
-									color: black;
-								}
+	    			<div class="modal fade mcModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	    				<div class="modal-dialog modal-lg">
+	    					<div class="modal-content">
+	    						<div> 
+	    							<!-- Begin MailChimp Signup Form -->
+	    							<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+	    							<style type="text/css">
+	    							#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	    							#mc_embed_signup {
+	    								color: black;
+	    							}
 										/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 										We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 										</style>
@@ -316,11 +349,14 @@
 											</form>
 										</div>
 									</div><!--End mc_embed_signup-->
-									
-								</div> <!-- modal content -->
+								</div>
 							</div>
-
-						</div> <!-- contact -->
+						</div>
+					</div>
+					
+					
+					
+				</div> <!-- contact -->
 
 
 
