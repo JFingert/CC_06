@@ -3,9 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
-	<!-- // <script src="bootstrap/js/bootstrap.js"></script>  -->
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -77,12 +74,10 @@
 	<div id="top"></div>
 
 	<div id="logo">
-		<!-- <img src="images/beach.jpg"> -->
 
 	</div>
 	<div id="logoName">Meta Meta Meta</div>
 
-	<!-- <img id="beach" src="images/beach.jpg"> -->
 
 	<div id="slogan" class="row">
 		<div class="col-md-4 col-md-offset-4">
@@ -144,7 +139,6 @@
 
 		<hr>
 
-		<!-- <div class="dividerOne"></div> -->
 
 
 
@@ -208,7 +202,6 @@
 
 
 			<!-- PANELS -->
-			<!-- <div class="col-md-10 divLeft"> -->
 			<a class="pillButton disappearForMobile" data-toggle="collapse" data-parent="#accordion" data-target="#wordpressShotOne">
 				Screen Shot 1
 			</a>
@@ -305,22 +298,17 @@
 			</div>
 
 
-			<!-- <button class="btn btn-primary" data-toggle="modal" data-target=".mailChimp">Large modal</button> -->
-	    			<!-- <a data-toggle="modal" data-target="#mailChimpModal">
-	    			Contact</a> -->
-
-
-	    			<div class="modal fade mcModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	    				<div class="modal-dialog modal-lg">
-	    					<div class="modal-content">
-	    						<div> 
-	    							<!-- Begin MailChimp Signup Form -->
-	    							<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-	    							<style type="text/css">
-	    							#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	    							#mc_embed_signup {
-	    								color: black;
-	    							}
+			<div class="modal fade mcModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div> 
+							<!-- Begin MailChimp Signup Form -->
+							<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+							<style type="text/css">
+							#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+							#mc_embed_signup {
+								color: black;
+							}
 										/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 										We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 										</style>
@@ -353,62 +341,29 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> <!-- contact -->
+
+				</div>  <!-- end of Projects -->
 
 
 
-				</div> <!-- contact -->
+				<script>
+				smoothScroll.init({
+					speed: 500, 
+					easing: 'easeInOutQuad', 
+					updateURL: false, 
+					offset: 50, 
+					callbackBefore: function ( toggle, anchor ) {}, 
+					callbackAfter: function ( toggle, anchor ) {} 
+				});
+
+				$('#myScrollspy').on('activate.bs.scrollspy', function () {
+					$('this').addClass('active');
+				})
 
 
+				</script>
 
 
-<!-- 
-			////////////
-
-			<div id="mailChimp" class="col-md-3 col-md-offset-1 col-xs-6 divRight accordion-body fade collapse in">
-				<div>
-					<a data-toggle="modal" data-target=".email"></a> 
-
-					<div class="modal fade email" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content"> -->
-
-
-
-
-
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- <div class="col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3"> -->
-
-	</div> <!-- contact -->
-</div>  <!-- end of Projects -->
-
-
-
-<script>
-	smoothScroll.init({
-    speed: 500, // Integer. How fast to complete the scroll in milliseconds
-    easing: 'easeInOutQuad', // Easing pattern to use
-    updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-    offset: 50, // Integer. How far to offset the scrolling anchor location in pixels
-    callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-    callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-	});
-
-	$('#myScrollspy').on('activate.bs.scrollspy', function () {
-		$('this').addClass('active');
-	})
-
-
-</script>
-
-
-</body>
-</html>
+			</body>
+			</html>
